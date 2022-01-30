@@ -18,8 +18,25 @@ BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(gtk+-3.0)
 BuildArch:  noarch
 
-# Add here runtime dependency when basic packagaing is ready
-#Requires
+Requires: python3dist(markdown)
+Requires: python3dist(patool)
+Requires: python3dist(pyyaml)
+Requires: python3dist(chardet)
+Requires: python3dist(urllib3)
+Requires: python3dist(idna)
+Requires: python3dist(certifi)
+Requires: python3dist(requests)
+Requires: python3dist(notify2)
+Requires: python-gobject3
+Requires: python-gi
+Requires: gtk+3.0
+Requires: gobject-introspection
+Requires: p7zip
+Requires: cabextract
+
+Recommends: gamemode
+Suggests: wine
+#TBC
 
 %description
 Easily manage Wine prefix in a new way! (Run Windows software and games on
@@ -62,7 +79,6 @@ Features:
 %build
 %meson
 %meson_build
-
 
 %install
 %meson_install
