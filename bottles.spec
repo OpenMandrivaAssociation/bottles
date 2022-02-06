@@ -40,7 +40,11 @@ Requires: xdpyinfo
 Requires: webkit
 
 #Typelibs
+Requires: typelib(Gdk)
+Requires: typelib(GdkX11)
+Requires: typelib(Gtk)
 Requires: typelib(Notify)
+Requires: typelib(Pango)
 Requires: typelib(Handy)
 Requires: typelib(WebKit2)
 
