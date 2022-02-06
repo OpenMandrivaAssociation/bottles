@@ -1,13 +1,13 @@
-%define code_name trento
+%define code_name trento-4
 %define oname Bottles
 
 Name:       bottles
-Version:    2022.1.28
+Version:    2022.1.28-trento-4
 Release:    1
 License:    GPLv3+
 Summary:    Easily manage Wine prefix in a new way
 URL:        https://github.com/bottlesdevs/Bottles
-Source0:    https://github.com/bottlesdevs/Bottles/archive/refs/tags/%{version}-%{code_name}/%{oname}-%{version}-%{code_name}.tar.gz
+Source0:    https://github.com/bottlesdevs/Bottles/archive/refs/tags/%{version}-%{code_name}/%{oname}-%{version}.tar.gz
 
 BuildRequires: appstream-util
 BuildRequires: meson
@@ -90,7 +90,7 @@ Features:
 
 
 %prep
-%autosetup -n %{oname}-%{version}-%{code_name} -p1
+%autosetup -n %{oname}-%{version} -p1
 
 %build
 %meson
