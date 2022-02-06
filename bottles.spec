@@ -33,7 +33,19 @@ Requires: gtk+3.0
 Requires: gobject-introspection
 Requires: p7zip
 Requires: cabextract
+Requires: libhandy-common
+Requires: vulkan-loader
+Requires: vulkan-tools
+Requires: xdpyinfo
+Requires: webkit
 
+#Typelibs
+Requires: typelib(Notify)
+Requires: typelib(Handy)
+Requires: typelib(WebKit2)
+
+# For 32-bit apps/games we need 32-bit compat gamemode but 32bit it is not available yet in Cooker.
+# Let's add 32 bit later
 Recommends: gamemode
 Suggests: wine
 #TBC
