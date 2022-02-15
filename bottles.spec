@@ -1,10 +1,10 @@
-%define ver 2022.1.28
-%define point 4
-%define code_name -trento-%{point}
+%define ver 2022.2.14
+#define point -4
+%define code_name -trento
 %define oname Bottles
 
 Name:       bottles
-Version:    %{ver}.trento.4
+Version:    %{ver}.trento
 Release:    1
 License:    GPLv3+
 Summary:    Easily manage Wine prefix in a new way
