@@ -1,4 +1,4 @@
-%define ver 2022.2.14
+%define ver 2022.3.14
 #define point -4
 %define code_name -trento
 %define oname Bottles
