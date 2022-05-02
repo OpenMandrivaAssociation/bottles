@@ -108,6 +108,7 @@ Features:
 %license LICENSE
 %doc README.md
 %{_bindir}/%{name}
+%{_bindir}/bottles-cli
 %{_datadir}/%{name}/
 %{_datadir}/applications/*.desktop
 %{_datadir}/glib-2.0/schemas/*.gschema.xml
