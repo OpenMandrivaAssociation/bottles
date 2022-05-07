@@ -1,6 +1,6 @@
-%define ver 2022.4.28
-%define point -3
-%define code_name -trento
+%define ver 2022.5.2
+%define point -2
+%define code_name -trento%{point}
 %define oname Bottles
 
 Name:       bottles
