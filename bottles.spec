@@ -1,4 +1,4 @@
-%define ver 2022.5.14
+%define ver 2022.5.28
 %define point 3
 %define code_name -trento-%{point}
 %define vcode_name .trento.%{point}
