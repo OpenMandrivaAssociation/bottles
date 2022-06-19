@@ -48,6 +48,7 @@ Requires: xdpyinfo
 Requires: webkit
 
 #Typelibs
+Requires: typelib(Adw)
 Requires: typelib(Gdk)
 Requires: typelib(GdkX11)
 Requires: typelib(Gtk)
