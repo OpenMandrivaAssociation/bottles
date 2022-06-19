@@ -1,11 +1,11 @@
-%define ver 2022.5.28
+%define ver 2022.6.14
 %define point 3
-%define code_name -trento-%{point}
-%define vcode_name .trento.%{point}
+%define code_name -brescia
+%define vcode_name .brescia.%{point}
 %define oname Bottles
 
 Name:       bottles
-Version:    %{ver}%{vcode_name}
+Version:    %{ver}
 Release:    1
 License:    GPLv3+
 Summary:    Easily manage Wine prefix in a new way
@@ -19,6 +19,8 @@ BuildRequires: python-gobject3
 BuildRequires: pkgconfig(pygobject-3.0)
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(gtk+-3.0)
+BuildRequires: pkgconfig(gtk4)
+BuildRequires: pkgconfig(libadwaita-1)
 BuildRequires: pkgconfig(libhandy-1)
 BuildArch:  noarch
 
@@ -31,9 +33,11 @@ Requires: python3dist(idna)
 Requires: python3dist(certifi)
 Requires: python3dist(requests)
 Requires: python3dist(notify2)
+Requires: %{_lib}adwaita1_0
 Requires: python-gobject3
 Requires: python-gi
 Requires: gtk+3.0
+Requires: gtk4
 Requires: gobject-introspection
 Requires: p7zip
 Requires: cabextract
