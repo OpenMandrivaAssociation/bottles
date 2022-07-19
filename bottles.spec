@@ -1,6 +1,6 @@
-%define ver 2022.6.14
+%define ver 2022.7.14
 %define point 3
-%define code_name -brescia
+%define code_name -brescia-3
 %define vcode_name .brescia.%{point}
 %define oname Bottles
 
