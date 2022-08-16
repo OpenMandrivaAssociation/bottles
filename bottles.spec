@@ -34,6 +34,7 @@ Requires: python3dist(idna)
 Requires: python3dist(certifi)
 Requires: python3dist(requests)
 Requires: python3dist(notify2)
+Requires: python3dist(fvs)
 Requires: %{_lib}adwaita1_0
 Requires: python-gobject3
 Requires: python-gi
