@@ -1,6 +1,6 @@
-%define ver 2022.7.14
+%define ver 2022.8.14
 %define point 3
-%define code_name -brescia-3
+%define code_name -brescia
 %define vcode_name .brescia.%{point}
 %define oname Bottles
 
@@ -24,18 +24,35 @@ BuildRequires: pkgconfig(libadwaita-1)
 BuildRequires: pkgconfig(libhandy-1)
 BuildArch:  noarch
 
-Requires: python3dist(markdown)
 Requires: python3dist(patool)
+Requires: python3dist(pefile)
+Requires: python3dist(pillow)
 Requires: python3dist(pyyaml)
 Requires: python3dist(chardet)
 Requires: python3dist(urllib3)
+Requires: python3dist(icoextract)
 Requires: python3dist(idna)
 Requires: python3dist(certifi)
 Requires: python3dist(requests)
+Requires: python3dist(markdown)
+Requires: python3dist(maturin)
 Requires: python3dist(notify2)
+Requires: python3dist(orjson)
+Requires: python3dist(fvs)
+Requires: %{_lib}yaml0_2
 Requires: %{_lib}adwaita1_0
+Requires: %{_lib}portal1
+Requires: %{_lib}curl-gnutls4
+Requires: %{_lib}gnutls30
+Requires: %{_lib}gnutlsxx30
+#32bit
+Requires: libgnutls30
+Requires: libgnutlsxx30
+Requires: gnutls
 Requires: python-gobject3
 Requires: python-gi
+Requires: imagemagick
+Requires: sassc
 Requires: gtk+3.0
 Requires: gtk4
 Requires: gobject-introspection
@@ -46,6 +63,10 @@ Requires: vulkan-loader
 Requires: vulkan-tools
 Requires: xdpyinfo
 Requires: webkit
+Requires: vte3
+
+#Missing
+#vmtouch
 
 #Typelibs
 Requires: typelib(Adw)
