@@ -6,7 +6,7 @@
 
 Name:       bottles
 Version:    %{ver}
-Release:    1
+Release:    2
 License:    GPLv3+
 Summary:    Easily manage Wine prefix in a new way
 URL:        https://github.com/bottlesdevs/Bottles
@@ -43,11 +43,11 @@ Requires: %{_lib}yaml0_2
 Requires: %{_lib}adwaita1_0
 Requires: %{_lib}portal1
 Requires: %{_lib}curl-gnutls4
-Requires: %{_lib}gnutls30
-Requires: %{_lib}gnutlsxx30
+Requires: %{_lib}gnutls
+Requires: %{_lib}gnutlsxx
 #32bit
-Requires: libgnutls30
-Requires: libgnutlsxx30
+Requires: libgnutls
+Requires: libgnutlsxx
 Requires: gnutls
 Requires: python-gobject3
 Requires: python-gi
