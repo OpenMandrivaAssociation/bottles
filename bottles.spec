@@ -1,4 +1,4 @@
-%define ver 2022.8.14
+%define ver 2022.12.14
 %define point 3
 %define code_name -brescia
 %define vcode_name .brescia.%{point}
@@ -10,7 +10,7 @@ Release:    2
 License:    GPLv3+
 Summary:    Easily manage Wine prefix in a new way
 URL:        https://github.com/bottlesdevs/Bottles
-Source0:    https://github.com/bottlesdevs/Bottles/archive/refs/tags/%{version}-%{code_name}/%{oname}-%{ver}%{code_name}.tar.gz
+Source0:    https://github.com/bottlesdevs/Bottles/archive/refs/tags/%{version}/%{oname}-%{ver}.tar.gz
 
 BuildRequires: appstream-util
 BuildRequires: meson
@@ -120,7 +120,7 @@ Features:
 
 
 %prep
-%autosetup -n %{oname}-%{ver}%{code_name} -p1
+%autosetup -n %{oname}-%{ver} -p1
 
 %build
 %meson
