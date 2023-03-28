@@ -6,7 +6,7 @@
 
 Name:       bottles
 Version:    %{ver}
-Release:    1
+Release:    2
 License:    GPLv3+
 Summary:    Easily manage Wine prefix in a new way
 URL:        https://github.com/bottlesdevs/Bottles
@@ -56,7 +56,7 @@ Requires: sassc
 Requires: gtk+3.0
 Requires: gtk4
 Requires: gobject-introspection
-Requires: p7zip
+Requires: 7zip
 Requires: cabextract
 Requires: libhandy-common
 Requires: vulkan-loader
