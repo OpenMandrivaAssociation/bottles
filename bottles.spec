@@ -6,7 +6,7 @@
 
 Name:       bottles
 Version:    %{ver}
-Release:    3
+Release:    4
 License:    GPLv3+
 Summary:    Easily manage Wine prefix in a new way
 URL:        https://github.com/bottlesdevs/Bottles
