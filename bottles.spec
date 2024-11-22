@@ -1,22 +1,21 @@
-%define ver 2022.8.14
-%define point 3
-%define code_name -brescia
-%define vcode_name .brescia.%{point}
 %define oname Bottles
 
 Name:       bottles
-Version:    %{ver}
-Release:    4
+Version:    51.15
+Release:    1
 License:    GPLv3+
 Summary:    Easily manage Wine prefix in a new way
 URL:        https://github.com/bottlesdevs/Bottles
-Source0:    https://github.com/bottlesdevs/Bottles/archive/refs/tags/%{version}-%{code_name}/%{oname}-%{ver}%{code_name}.tar.gz
+Source0:    https://github.com/bottlesdevs/Bottles/archive/%{version}/%{oname}-%{version}.tar.gz
 
 BuildRequires: appstream-util
+BuildRequires: gettext
 BuildRequires: meson
 BuildRequires: python
 BuildRequires: python-gobject3
+BuildRequires: python-gi
 BuildRequires: pkgconfig(pygobject-3.0)
+BuildRequires: pkgconfig(blueprint-compiler)
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(gtk+-3.0)
 BuildRequires: pkgconfig(gtk4)
@@ -120,7 +119,7 @@ Features:
 
 
 %prep
-%autosetup -n %{oname}-%{ver}%{code_name} -p1
+%autosetup -n %{oname}-%{version} -p1
 
 %build
 %meson
@@ -132,7 +131,6 @@ Features:
 %find_lang %{name}
 
 %files -f %{name}.lang
-%license LICENSE
 %doc README.md
 %{_bindir}/%{name}
 %{_bindir}/bottles-cli
