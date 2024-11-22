@@ -2,7 +2,7 @@
 
 Name:       bottles
 Version:    51.15
-Release:    1
+Release:    2
 License:    GPLv3+
 Summary:    Easily manage Wine prefix in a new way
 URL:        https://github.com/bottlesdevs/Bottles
@@ -24,6 +24,7 @@ BuildRequires: pkgconfig(libhandy-1)
 BuildArch:  noarch
 
 Requires: python3dist(patool)
+Requires: python3dist(pathvalidate)
 Requires: python3dist(pefile)
 Requires: python3dist(pillow)
 Requires: python3dist(pyyaml)
@@ -38,6 +39,7 @@ Requires: python3dist(maturin)
 Requires: python3dist(notify2)
 Requires: python3dist(orjson)
 Requires: python3dist(fvs)
+Requires: python3dist(vkbasalt-cli)
 Requires: %{_lib}yaml0_2
 Requires: %{_lib}adwaita1_0
 Requires: %{_lib}portal1
