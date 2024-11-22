@@ -131,7 +131,6 @@ Features:
 %find_lang %{name}
 
 %files -f %{name}.lang
-%license LICENSE
 %doc README.md
 %{_bindir}/%{name}
 %{_bindir}/bottles-cli
