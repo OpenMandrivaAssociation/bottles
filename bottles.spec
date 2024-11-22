@@ -13,6 +13,7 @@ BuildRequires: gettext
 BuildRequires: meson
 BuildRequires: python
 BuildRequires: python-gobject3
+BuildRequires: python-gi
 BuildRequires: pkgconfig(pygobject-3.0)
 BuildRequires: pkgconfig(blueprint-compiler)
 BuildRequires: pkgconfig(glib-2.0)
