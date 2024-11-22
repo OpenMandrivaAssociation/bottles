@@ -9,6 +9,7 @@ URL:        https://github.com/bottlesdevs/Bottles
 Source0:    https://github.com/bottlesdevs/Bottles/archive/%{version}/%{oname}-%{version}.tar.gz
 
 BuildRequires: appstream-util
+BuildRequires: gettext
 BuildRequires: meson
 BuildRequires: python
 BuildRequires: python-gobject3
