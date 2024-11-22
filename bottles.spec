@@ -13,6 +13,7 @@ BuildRequires: meson
 BuildRequires: python
 BuildRequires: python-gobject3
 BuildRequires: pkgconfig(pygobject-3.0)
+BuildRequires: pkgconfig(blueprint-compiler)
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(gtk+-3.0)
 BuildRequires: pkgconfig(gtk4)
