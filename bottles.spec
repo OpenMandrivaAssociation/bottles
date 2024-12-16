@@ -1,7 +1,7 @@
 %define oname Bottles
 
 Name:       bottles
-Version:    2022.12.14.1
+Version:    51.17
 Release:    1
 License:    GPLv3+
 Summary:    Easily manage Wine prefix in a new way
