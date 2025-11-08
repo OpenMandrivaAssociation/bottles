@@ -1,7 +1,7 @@
 %define oname Bottles
 
 Name:       bottles
-Version:    51.17
+Version:    52.1
 Release:    1
 License:    GPLv3+
 Summary:    Easily manage Wine prefix in a new way
@@ -84,6 +84,7 @@ Requires: typelib(WebKit2)
 # For 32-bit apps/games we need 32-bit compat gamemode but 32bit it is not available yet in Cooker.
 # Let's add 32 bit later
 Recommends: gamemode
+Recommends: mangohud
 Suggests: wine
 #TBC
 
