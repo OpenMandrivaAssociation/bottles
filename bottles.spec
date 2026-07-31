@@ -1,14 +1,14 @@
 %define oname Bottles
 
 Name:       bottles
-Version:    51.17
+Version:    64.1
 Release:    1
 License:    GPLv3+
 Summary:    Easily manage Wine prefix in a new way
 URL:        https://github.com/bottlesdevs/Bottles
 Source0:    https://github.com/bottlesdevs/Bottles/archive/%{version}/%{oname}-%{version}.tar.gz
 # Revert this insanity. Please don't port deviation from windows to linux. Flatpak is an option, not a requirement.
-Patch0:     if-you-want-flatpak-everywhere-switch-to-windows-and-dont-broke-linux.patch
+# dropped (no longer applies): Patch0:     if-you-want-flatpak-everywhere-switch-to-windows-and-dont-broke-linux.patch
 
 BuildRequires: appstream-util
 BuildRequires: gettext
@@ -123,7 +123,7 @@ Features:
 
 
 %prep
-%autosetup -n %{oname}-%{version} -p1
+%autosetup -n Bottles-64.1 -p1
 
 %build
 %meson
